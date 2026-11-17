@@ -157,5 +157,5 @@ void displaySeatColumn(char seats[][ROWS], int column) {
 			cout << seats[column][row] << " ";
 		}
 	}
-	
+	cout << "\n";
 }
