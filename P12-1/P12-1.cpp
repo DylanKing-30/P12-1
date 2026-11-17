@@ -98,7 +98,16 @@ int main() {
 			}
 		}
 
-;
+		if (seat_chart[column_index][row_index] == 'X') {
+			cout << "Sorry, this seat has already been taken.";
+		}
+		else if (seat_chart[column_index][row_index] == '?') {
+			cout << "Sorry, no such seat exists on the CRJ 200.";
+		}
+		else {
+			seat_chart[column_index][row_index] = 'X';
+		}
+		cout << "\n\n";
 	}
 }
 
